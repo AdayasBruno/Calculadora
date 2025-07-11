@@ -10,31 +10,31 @@
 
 <body>
     <div class="calculator">
-        <div class="result">0</div>
+        <div class="result" id="display">0</div>
         <div class="buttons">
-            <button class="bg-gray">AC</button>
-            <button class="bg-gray">+/-</button>
-            <button class="bg-gray">%</button>
-            <button class="bg-blue">÷</button>
+            <button class="bg-gray" onclick="limpar()">AC</button>
+            <button class="bg-gray" onclick="valor('+/-')">+/-</button>
+            <button class="bg-gray" onclick="valor('%')">%</button>
+            <button class="bg-blue" onclick="valor('÷')">÷</button>
 
-            <button class="bg-light-gray">7</button>
-            <button class="bg-light-gray">8</button>
-            <button class="bg-light-gray">9</button>
-            <button class="bg-blue">x</button>
+            <button class="bg-light-gray" onclick="valor('7')">7</button>
+            <button class="bg-light-gray" onclick="valor('8')">8</button>
+            <button class="bg-light-gray" onclick="valor('9')">9</button>
+            <button class="bg-blue" onclick="valor('x')">x</button>
 
-            <button class="bg-light-gray">4</button>
-            <button class="bg-light-gray">5</button>
-            <button class="bg-light-gray">6</button>
-            <button class="bg-blue">-</button>
+            <button class="bg-light-gray" onclick="valor('4')">4</button>
+            <button class="bg-light-gray" onclick="valor('5')">5</button>
+            <button class="bg-light-gray" onclick="valor('6')">6</button>
+            <button class="bg-blue" onclick="valor('-')">-</button>
 
-            <button class="bg-light-gray">1</button>
-            <button class="bg-light-gray">2</button>
-            <button class="bg-light-gray">3</button>
-            <button class="bg-blue">+</button>
+            <button class="bg-light-gray" onclick="valor('1')">1</button>
+            <button class="bg-light-gray" onclick="valor('2')">2</button>
+            <button class="bg-light-gray" onclick="valor('3')">3</button>
+            <button class="bg-blue" onclick="valor('+')">+</button>
 
-            <button class="bg-light-gray button-zero">0</button>
-            <button class="bg-light-gray">,</button>
-            <button class="bg-blue">=</button>
+            <button class="bg-light-gray button-zero" onclick="valor('0')">0</button>
+            <button class="bg-light-gray" onclick="valor(',')">,</button>
+            <button class="bg-blue" onclick="calc()">=</button>
 
         </div>
     </div>
